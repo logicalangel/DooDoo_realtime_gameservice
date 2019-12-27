@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_DooDoo_realtime_gameservice.1681687369.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="BayatGames" t="Include">
+          <e p="Free Platform Game Assets" t="Include">
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="HealthBar" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="HealthBar.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="GameService" t="Include">
+            <e p="Core" t="Include">
+              <e p="Crc32.NET.xml" t="Include" />
+              <e p="FiroozehGameService.xml" t="Include" />
+              <e p="Newtonsoft.Json.xml" t="Include" />
+            </e>
+            <e p="Tools" t="Include">
+              <e p="AsyncAwaitUtil" t="Include">
+                <e p="Source" t="Include">
+                  <e p="Awaiters.cs" t="Include" />
+                  <e p="AwaitExtensions.cs" t="Include" />
+                  <e p="IEnumeratorAwaitExtensions.cs" t="Include" />
+                  <e p="Internal" t="Include">
+                    <e p="AsyncCoroutineRunner.cs" t="Include" />
+                    <e p="SyncContextUtil.cs" t="Include" />
+                  </e>
+                  <e p="TaskExtensions.cs" t="Include" />
+                  <e p="WaitForBackgroundThread.cs" t="Include" />
+                  <e p="WaitForUpdate.cs" t="Include" />
+                </e>
+                <e p="Tests" t="Include">
+                  <e p="AsyncUtilTests.cs" t="Include" />
+                  <e p="Util" t="Include">
+                    <e p="TestButtonHandler.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Utils" t="Include">
+              <e p="GameServiceInitializer.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Controllers" t="Include">
+            <e p="bulletController.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="GameMainController.cs" t="Include" />
+            <e p="MenuController.cs" t="Include" />
+            <e p="MobileInputController.cs" t="Include" />
+          </e>
+          <e p="Handlers" t="Include">
+            <e p="AchievementHandler.cs" t="Include" />
+            <e p="GsLiveHandler.cs" t="Include" />
+            <e p="LeaderBoardHandler.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="Event.cs" t="Include" />
+            <e p="Payload.cs" t="Include" />
+            <e p="Save.cs" t="Include" />
+          </e>
+          <e p="Statics" t="Include">
+            <e p="GameServiceIDS.cs" t="Include" />
+          </e>
+          <e p="Utils" t="Include">
+            <e p="ActionUtil.cs" t="Include" />
+            <e p="DamageUtil.cs" t="Include" />
+            <e p="FileUtil.cs" t="Include" />
+            <e p="MobileMovementUtil.cs" t="Include" />
+            <e p="NotificationUtils.cs" t="Include" />
+            <e p="RandomUtil.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="DooDoo_realtime_gameservice.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
