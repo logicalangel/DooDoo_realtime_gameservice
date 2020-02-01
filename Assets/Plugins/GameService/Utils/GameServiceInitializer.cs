@@ -19,6 +19,7 @@ namespace Plugins.GameService.Utils
                 DeviceType = UnityEngine.SystemInfo.deviceType.ToString(),
                 OperatingSystem = UnityEngine.SystemInfo.operatingSystem,
                 ProcessorCount = UnityEngine.SystemInfo.processorCount,
+                NetworkType = Application.internetReachability.ToString(),
                 ProcessorFrequency = UnityEngine.SystemInfo.processorFrequency,
                 ProcessorType = UnityEngine.SystemInfo.processorType,
                 GraphicsDeviceName = UnityEngine.SystemInfo.graphicsDeviceName,
