@@ -189,7 +189,7 @@ namespace Controllers
             RealTimeEventHandlers.Error += OnError;
                 
             RealTimeEventHandlers.JoinedRoom += OnJoinRoom;
-        
+
         }
         
         
@@ -216,10 +216,7 @@ namespace Controllers
             StartGameBtn.interactable = true;
             StartGameBtn.onClick.AddListener(async () =>
             {
-                await GameService.GSLive.RealTime.AutoMatch(new GSLiveOption.AutoMatchOption
-                {
-                    Role = "DooDoo" , MinPlayer = 2 , MaxPlayer = 2 , IsPersist = false
-                });
+                await GameService.GSLive.RealTime.AutoMatch(new GSLiveOption.AutoMatchOption("DooDoo",2,2));
                 
                 StartMenuText.text = "MatchMaking...";
                 StartGameBtn.interactable = false;
