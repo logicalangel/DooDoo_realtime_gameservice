@@ -20,7 +20,7 @@ using FiroozehGameService.Core;
 using FiroozehGameService.Core.GSLive;
 using FiroozehGameService.Handlers;
 using FiroozehGameService.Models;
-using FiroozehGameService.Models.Command;
+using FiroozehGameService.Models.GSLive.Command;
 using Models;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -209,9 +209,8 @@ namespace Controllers
             
         }
 
-        private async void OnSuccessfullyLogined(object sender, EventArgs e)
+        private void OnSuccessfullyLogined(object sender, EventArgs e)
         {
-            await GetSaveData();
             Status.text = "Status : Connected!";
             StartGameBtn.interactable = true;
             StartGameBtn.onClick.AddListener(async () =>

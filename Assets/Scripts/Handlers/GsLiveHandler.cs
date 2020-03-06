@@ -17,9 +17,9 @@
 using System.Collections.Generic;
 using FiroozehGameService.Core;
 using FiroozehGameService.Handlers;
-using FiroozehGameService.Models.Command;
 using FiroozehGameService.Models.Enums;
 using FiroozehGameService.Models.GSLive;
+using FiroozehGameService.Models.GSLive.Command;
 using FiroozehGameService.Models.GSLive.RT;
 using Models;
 using Newtonsoft.Json;

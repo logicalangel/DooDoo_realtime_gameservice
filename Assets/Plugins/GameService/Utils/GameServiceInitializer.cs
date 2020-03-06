@@ -12,8 +12,12 @@ namespace Plugins.GameService.Utils
         void OnEnable()
         {
             if(FiroozehGameService.Core.GameService.IsAuthenticated()) return;
+            Debug.Log("GameService Version : "+FiroozehGameService.Core.GameService.Version()+" Initializing...");
+            DontDestroyOnLoad(this);
+
             var systemInfo = new SystemInfo
             {
+                DeviceUniqueId = UnityEngine.SystemInfo.deviceUniqueIdentifier,
                 DeviceModel = UnityEngine.SystemInfo.deviceModel,
                 DeviceName = UnityEngine.SystemInfo.deviceName,
                 DeviceType = UnityEngine.SystemInfo.deviceType.ToString(),
@@ -28,6 +32,12 @@ namespace Plugins.GameService.Utils
             };
             var config = new GameServiceClientConfiguration(ClientId,ClientSecret,systemInfo);
             FiroozehGameService.Core.GameService.ConfigurationInstance(config);
+        }
+        
+        private void OnDestroy()
+        {
+            Debug.Log("GameService Logout Called");
+            FiroozehGameService.Core.GameService.Logout();
         }
     }
 }
