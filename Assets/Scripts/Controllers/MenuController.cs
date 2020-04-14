@@ -20,12 +20,15 @@ using FiroozehGameService.Core;
 using FiroozehGameService.Core.GSLive;
 using FiroozehGameService.Handlers;
 using FiroozehGameService.Models;
+using FiroozehGameService.Models.GSLive;
 using FiroozehGameService.Models.GSLive.Command;
+using FiroozehGameService.Utils;
 using Models;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Utils;
+using LogType = FiroozehGameService.Utils.LogType;
 
 /**
 * @author Alireza Ghodrati
@@ -189,15 +192,25 @@ namespace Controllers
             RealTimeEventHandlers.Error += OnError;
                 
             RealTimeEventHandlers.JoinedRoom += OnJoinRoom;
+            RealTimeEventHandlers.LeftRoom += LeftRoom;
+            LogUtil.LogEventHandler += LogEventHandler;
+        }
 
+        private void LogEventHandler(object sender, Log e)
+        {
+            if(e.Type == LogType.Normal) Debug.Log(e.Txt);
+            else Debug.LogError(e.Txt);
         }
         
-        
-        
-        
+        private void LeftRoom(object sender, Member e)
+        {
+            Debug.Log("LeftRoom : " + e.Name);
+        }
+
 
         private void OnJoinRoom(object sender, JoinEvent e)
         {
+            Debug.Log("OnJoinRoom : " + e.JoinData.JoinedMember.Name);
             var activeScene = SceneManager.GetActiveScene();
             // Go To GameScene When Joined To Room
             if(activeScene.name == "MenuScene")
